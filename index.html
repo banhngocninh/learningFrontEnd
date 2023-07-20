@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project FontEnd</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <style type="text/css">
+      #box-id {
+        /* id */
+        width: 600px;
+      }
+
+      .box {
+        /* class */
+        border: 2px solid #f00;
+        width: 100px;
+      }
+
+      div {
+        /* selector */
+        border: 3px solid #999;
+        padding: 5px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- EX01 -->
+    <div class="div">HTML is easy</div>
+    <!-- block level -->
+    <br />
+    <span class="span">HTML is easy</span>
+    <!-- inline -->
+
+    <!-- EX02 -->
+    <p class="div">HTML is easy 2</p>
+    <!-- block level -->
+    <br />
+    <a class="span">HTML is easy 2</a>
+    <!-- inline -->
+
+    <!-- EX03 -->
+    <br />
+    <p class="div03">HTML is easy 3</p>
+
+    <!-- EX04 -->
+    <br />
+    <a class="span04">HTML is easy 4</a>
+
+    <!-- EX05 -->
+    <div class="box" id="box-id" style="width: 900px">Cau truc HTML tag</div>
+    <!-- thứ tự ưu tiên: style > id > class > selector > * -->
+
+    <!-- EX06 -->
+    <br />
+    <div class="box1 box2">Cau truc HTML tag 2</div>
+  </body>
 </html>
