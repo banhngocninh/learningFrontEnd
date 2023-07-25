@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+< lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project FontEnd</title>
+    <link rel="stylesheet" href="css/chuong2.css" />
+    <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .container {
+        width: 400px;
+        height: 200px;
+        border: 2px solid #999;
+      }
+
+      /* listGroup */
+      .menu {
+        list-style: inside;
+        list-style-image: url(assets/hearts.png);
+        margin: 20px;
+      }
+
+      /* backgroundGroup */
+      .background {
+        background-color: aqua;
+        background-image: url(assets/moroccan-flower.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        /* background: aqua url(assets/moroccan-flower.png) no-repeat center center fixed; */
+        /* fixed: background sẽ luôn ở đúng vị trí toạ độ đối với màn hình chúng ta thấy */
+        /* scroll: background sẽ luôn ở vị trí toạ độ đối với đối tượng sử dụng background */
+      }
+
+      .src {
+        background-image: url(assets/moroccan-flower.png);
+      }
+
+      .contentImage {
+        margin: 20px auto;
+        width: 600px;
+        height: 800px;
+        border: 2px solid #13701f;
+        background: url(assets/moroccan-flower.png) top center no-repeat;
+      }
+    </style>
+  </head>
+
+  <div>
+    <!-- EX01 -->
+    <div class="container text">
+      Intel® Driver & Support Assistant Identify your products and get driver
+      and software updates for most of your Intel hardware. View a list of
+      exclusions.
+    </div>
+
+    <!-- EX02 -->
+    <div class="block background"></div>
+
+    <!-- EX03 -->
+    <div class="block blockGroup">
+      Android có rất nhiều các components như Activity, Fragment, Service,
+      BroadCastReceiver ... Mỗi thành phần đều có vòng đời của riêng chúng và có
+      những thành phần mà <span>vòng đời</span> của chúng liên quan đến nhau.
+      Việc hiểu được lifecycle của các components trong android sẽ giúp tránh
+      được các lỗi thường gặp.
+    </div>
+
+    <!-- EX04 -->
+    <div id="main">
+      <div class="left">Left</div>
+      <div class="content">Content</div>
+      <div class="right">right</div>
+    </div>
+
+    <!-- EX05 -->
+    <div
+      class="bordered"
+      style="width: 600px; height: 400px; margin: 20px auto"
+    >
+      Trong AsyncTask Params, Progress, Result có 3 đối số là các Generic Type:
+      Params: Là giá trị (biến) được truyền vào khi gọi thực thi tiến trình và
+      nó sẽ được truyền vào doInBackground Progress: Là giá trị (biến) dùng để
+      update giao diện diện lúc tiến trình thực thi, biến này sẽ được truyền vào
+      hàm onProgressUpdate. Result: Là biến dùng để lưu trữ kết quả trả về sau
+      khi tiến trình thực hiện xong.
+    </div>
+
+    <!-- EX06 -->
+    <div class="box">
+      1. Mở đầu. Xin chào bạn! Nếu như bạn mới tìm hiểu về Android thì bạn có
+      biết rằng Android cung cấp một số tùy chọn để bạn lưu dữ liệu ứng dụng của
+      mình không?. Mình xin nói rằng giải pháp mà bạn chọn tùy thuộc vào nhu cầu
+      cụ thể của bạn, chẳng hạn như dung lượng dữ liệu của bạn yêu cầu, loại dữ
+      liệu bạn cần để lưu trữ, và dữ liệu có phải là private cho ứng dụng của
+      bạn hay ứng dụng khác hoặc người dùng có thể truy cập?
+    </div>
+
+    <!-- EX07 -->
+    <div class="blockElements boxA">Box A</div>
+    <div class="blockElements boxB">Box B</div>
+    <div class="blockElements boxC">Box C</div>
+    <div class="clr"></div>
+    <div class="blockElements boxD">Box D</div>
+    <div class="blockElements boxE">Box E</div>
+
+    <!-- EX08 list doc-->
+    <div class="blockListGroup">
+      <ul class="menu" style="width: 200px">
+        <li>Home</li>
+        <li class="active">About Us</li>
+        <li>Products</li>
+        <li>Special</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <!-- EX09 list ngang-->
+    <div class="blockListGroup">
+      <ul class="menu">
+        <li class="blockHorizontally">Home</li>
+        <li class="blockHorizontally active">About Us</li>
+        <li class="blockHorizontally">Products</li>
+        <li class="blockHorizontally">Special</li>
+        <li class="blockHorizontally">Contact</li>
+      </ul>
+    </div>
+
+    <!-- EX10 -->
+    <div class="positionGroup">
+      <div class="positionBox positionBoxA">Box A</div>
+      <div class="positionBox positionBoxB">Box B</div>
+      <div class="positionBox positionBoxC">Box C</div>
+      <div class="positionBox positionBoxD">Box D</div>
+    </div>
+
+    <!-- EX11 -->
+    <div class="contentImage"></div>
+    <div class="boxImage top">Top</div>
+    <!-- <div class="boxImage bottom">Bottom</div> -->
+    <div class="boxImage leftPosition">Left</div>
+
+    <!-- EX12 -->
+    <div id="mainBoxGroup">
+      <div class="leftBoxGroup">
+        Samsung Electronics HCMC CE Complex (SEHC) chuyên sản xuất hàng điện tử
+        gia dụng như tivi, tủ lạnh, máy giặt, máy hút bụi. Với mục tiêu trở
+        thành nhà máy đi đầu tại khu vực Đông Nam Á, SEHC luôn mở rộng và cả
+        tiến liên tục. Đó chính là lý do SEHC cần các tài năng trẻ như các bạn.
+      </div>
+      <div class="rightBoxGroup">
+        Skills and Qualifications Các bạn ứng viên vui lòng gửi CV tiếng Anh
+        thông qua hệ thống, phòng Tuyển Dụng sẽ tiến hành sàng lọc và liên hệ
+        đối với những ứng viên phù hợp.
+      </div>
+      <div class="centerBoxGroup">
+        Role and Responsibilities Các vị trí tuyển dụng liên tục trong năm: -
+        Software Developer (C++,C#), Mobile Developer (Android, iOS), Web App
+        Developer, Software Quality Engineer (tốt nghiệp các chuyên ngành: khoa
+        học máy tính, công nghệ thông tin...) - R&D Engineer, Production
+        Engineer, Maintenance Engineer (tốt nghiệp các chuyên ngành: cơ khí,
+        điện tử, cơ điện tử, điện tử viễn thông,...) - Quality Assurance,
+        Quality Control (tốt nghiệp các chuyên ngành: điện tử, cơ điện tử...) -
+        Innovation Engineer, Production Planning, Merchandiser, Logistics
+        Operation, Warehouse Management (tốt nghiệp các chuyên ngành: Kỹ sư hệ
+        thống công nghiệp, Quản lý công nghiệp...)
+      </div>
+    </div>
+
+    <!-- EX13 -->
+    <div class="positionGroup">
+      <div class="positionBox positionBoxA1">Box A</div>
+      <div class="positionBox positionBoxB1">Box B</div>
+      <div class="positionBox positionBoxC1">Box C</div>
+      <div class="positionBox positionBoxD1">Box D</div>
+    </div>
+
+    <!-- EX14 -->
+    <!-- <div class="overlay"></div>
+    <div class="lightBox">
+      <h1>lightBox is easy</h1>
+    </div> -->
+
+    <!-- EX15 -->
+    <div class="image">
+      <img alt="moroccan-flower" src="assets/moroccan-flower.png">
+      <div class="bar"></div>
+      <div class="title">Moroccan Flower</div>
+    </div>
+
+    <div class="slider">
+      <div class="imageList">
+        <div class="image2"><img src="assets/road-1.jpg" alt="Road 1"></div>
+        <div class="image2"><img src="assets/road-2.jpg" alt="Road 2"></div>
+        <div class="image2"><img src="assets/road-3.jpg" alt="Road 3"></div>
+        <div class="image2"><img src="assets/road-4.jpg" alt="Road 4"></div>
+        <div class="image2"><img src="assets/road-5.jpg" alt="Road 5"></div>
+        <div class="image2"><img src="assets/road-6.jpg" alt="Road 6"></div>
+        <div class="image2"><img src="assets/road-7.jpg" alt="Road 7"></div>
+      </div>
+    </div>
+
+  </body>
+</html>

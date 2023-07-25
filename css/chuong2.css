@@ -1,0 +1,408 @@
+/* type group */
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: oblique;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 20px;
+    /* font: oblique small-caps bold 18px/20px Arial, Helvetica, sans-serif; */
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+
+.block {
+    width: 600px;
+    height: 900px;
+    border: 3px solid #999;
+    margin: 20px auto;
+    /* auto để căn chỉnh chính giữa */
+}
+
+/* blockGroup */
+.blockElements {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.blockListGroup {
+    width: 800px;
+    margin: 20px auto;
+    height: 250px;
+    border: 2px solid #f00;
+}
+
+.blockGroup {
+    letter-spacing: normal;
+    word-spacing: 15px;
+    text-align: justify;
+    text-indent: 50px;
+    /* thụt vào đầu dòng */
+    white-space: normal;
+    /* pre: giữ đúng giá trị nhập trong code */
+}
+
+.blockGroup span {
+    vertical-align: 15px;
+}
+
+.positionGroup {
+    width: 400px;
+    height: 250px;
+    margin: 50px auto;
+    border: 2px solid #f00;
+    position: relative;
+    line-height: 100px;
+}
+
+.positionBoxA {
+    background-color: #c0514e;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.positionBoxB {
+    background-color: #4cacc6;
+    text-align: center;
+    line-height: 100px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.positionBoxC {
+    background-color: #f79647;
+    text-align: center;
+    line-height: 100px;
+}
+
+.positionBoxD {
+    background-color: #9bbb5a;
+    text-align: center;
+    line-height: 100px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+}
+
+.positionBox {
+    width: 100px;
+    height: 100px;
+}
+
+.positionBoxA1 {
+    background-color: #c0514e;
+    text-align: center;
+    top: 100px;
+    left: 40px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.positionBoxB1 {
+    background-color: #abc04e;
+    text-align: center;
+    top: 125px;
+    left: 100px;
+    position: absolute;
+    z-index: 997;
+}
+
+.positionBoxC1 {
+    background-color: #4ec09e;
+    text-align: center;
+    top: 55px;
+    left: 160px;
+    position: absolute;
+    z-index: 999;
+}
+
+.positionBoxD1 {
+    background-color: #c04e87;
+    text-align: center;
+    top: 65px;
+    left: 130px;
+    position: absolute;
+    z-index: 998;
+}
+
+/* borderedGroup */
+.bordered {
+    /* border-top-width: thin;
+    border-top-style: dotted;
+    border-top-color: blueviolet; */
+
+    /* border-right-width: thin;
+    border-right-style: double;
+    border-right-color: rgb(56, 27, 27); */
+
+    /* border-bottom-width: thick;
+    border-bottom-style: dashed;
+    border-bottom-color: rgb(11, 64, 100); */
+
+    /*  border-left-width: thick;
+    border-left-style: groove;
+    border-left-color: rgb(43, 205, 226); */
+
+    /*  border-top: thin dotted blueviolet;
+    border-right: thin double rgb(56, 27, 27);
+    border-bottom: thick dashed rgb(11, 64, 100);
+    border-left: thick groove rgb(43, 205, 226); */
+
+    border-width: thin thin thick thick;
+    border-style: dotted double dashed groove;
+    border-color: blueviolet rgb(56, 27, 27) rgb(11, 64, 100) rgb(43, 205, 226);
+}
+
+#main {
+    display: table;
+}
+
+.left {
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    display: table-cell;
+}
+
+.content {
+    background-color: blue;
+    height: 200px;
+    width: 500px;
+    display: table-cell;
+}
+
+.right {
+    background-color: red;
+    height: 200px;
+    width: 300px;
+    display: table-cell;
+}
+
+/* boxPart1 */
+.box {
+    width: 250px;
+    border: 2px solid #999;
+    /* height: 500px; */
+    min-height: 300px;
+    margin: 50px auto;
+    text-align: justify;
+}
+
+/* boxPart1 */
+.boxA {
+    background-color: #c0514e;
+    float: left;
+}
+
+/* boxPart1 */
+.boxB {
+    background-color: #4cacc6;
+    float: left;
+}
+
+/* boxPart1 */
+.boxC {
+    background-color: #f79647;
+    float: right;
+}
+
+/* boxPart1 */
+.boxD {
+    /* width: 100%; */
+    background-color: #9bbb5a;
+    float: left;
+}
+
+/* boxPart1 */
+.boxE {
+    /* width: 100%; */
+    background-color: #999;
+    margin: auto;
+}
+
+/* boxPart1 */
+.clr {
+    clear: both;
+}
+
+.blockHorizontally {
+    width: 120px;
+    margin-right: 2px;
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+
+.menu li {
+    border: 1px solid #c0514e;
+    margin-bottom: 2px;
+    padding: 3px 3px 3px 15px;
+}
+
+.menu li.active {
+    background-color: aquamarine;
+}
+
+.boxImage {
+    width: 100%;
+    height: 30px;
+    background-color: aqua;
+    border: 1px solid #c0514e;
+    text-align: center;
+    line-height: 30px;
+}
+
+.top {
+    top: 0px;
+    position: fixed;
+}
+
+.bottom {
+    bottom: 0px;
+    position: fixed;
+}
+
+/* boxGroupPart2 */
+/* ngoài sử dụng float left thì có thể sử dụng display: table và display: table-cell */
+#mainBoxGroup {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* boxGroupPart2 */
+.leftBoxGroup {
+    width: 290px;
+    padding: 5px 5px;
+    float: left;
+    background-color: #09f;
+}
+
+/* boxGroupPart2 */
+.centerBoxGroup {
+    padding: 5px 5px;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: rgb(89, 0, 255);
+}
+
+/* boxGroupPart2 */
+.rightBoxGroup {
+    width: 290px;
+    padding: 5px 5px;
+    float: right;
+    background-color: #09f;
+}
+
+/* với định dạng sẽ không cố định khoảng cách của 2 khung bên trái phải */
+/* .leftBoxGroup {
+    width: 28%;
+    padding: 1% 1%;
+    float: left;
+    background-color: #09f;
+} */
+
+/* .rightBoxGroup {
+    width: 28%;
+    padding: 1% 1%;
+    float: left;
+    background-color: #09f;
+} */
+
+/* .centerBoxGroup {
+    padding: 1% 1%;
+    width: 38%;
+    float: left;
+    background-color: rgb(89, 0, 255);
+} */
+
+.leftPosition {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    top: 50%;
+    position: fixed;
+    left: 20px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #4ec09e;
+    position: fixed;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    line-height: 100%;
+    z-index: 900;
+}
+
+.lightBox {
+    background-color: #c04e87;
+    border: 5px solid #00c;
+    width: 800px;
+    height: 350px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    z-index: 1000;
+    margin-top: -175px;
+    margin-left: -400px;
+    line-height: 350px;
+}
+
+/* height = 1000px, width = 1200px, top = 50% * height, left = 50% * width, margin-top = -(height/2), margin-left = -(width/2) */
+
+/* slide */
+.image {
+    border: 2px solid #4e7fc0;
+    margin: 20px auto;
+    width: 400px;
+    position: relative;
+}
+
+.bar {
+    position: absolute;
+    bottom: 0px;
+    background-color: #000;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    width: 100%;
+    height: 50px;
+}
+
+.title {
+    position: absolute;
+    bottom: 12px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+
+/* slide2 */
+.imageList {
+    width: 1806px; /* giúp hình ảnh trên cùng 1 dòng */
+}
+
+.slider {
+    margin: 30px auto;
+    width: 800px;
+    border: 2px solid olivedrab;
+    padding: 3px;
+    overflow-x: hidden; /* ẩn bớt hình ảnh theo chiều ngàng */
+}
+
+.image2 {
+    border: 1px solid olivedrab;
+    float: left; /* để các ảnh nằm trên cùng 1 hàng */
+    margin: 0 2px 0 0;
+    padding: 2px;
+}
