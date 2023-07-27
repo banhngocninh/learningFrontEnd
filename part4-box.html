@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project FontEnd</title>
+    <link rel="stylesheet" href="css/part4-box.css" />
+
+    <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      
+      .right {
+        width: 400px;
+        border: 1px solid black;
+        margin: 30px auto;
+        padding: 10px;
+        background-color: yellow;
+      }
+
+      .boxA {
+        padding: 20px 15px;
+        background-color: #abd2ae;
+        font: 12px Arial, Helvetica, sans-serif;
+        text-align: justify;
+      }
+
+      .boxB {
+        padding: 20px 15px;
+        background-color: #abd2ae;
+        font: 12px Arial, Helvetica, sans-serif;
+        text-align: justify;
+        border: 2px solid #4f4f4f;
+      }
+
+      .boxC {
+        padding: 20px 15px;
+        background: url(assets/tc.jpg) left top repeat-x #feffff;
+        font: 12px Arial, Helvetica, sans-serif;
+        text-align: justify;
+        border: 2px solid #4f4f4f;
+      }
+
+      .boxD {
+        font: 12px Arial, Helvetica, sans-serif;
+        text-align: justify;
+        border: 2px solid #4f4f4f;
+        background-color: #feffff;
+      }
+
+      .boxD .top {
+        background: url(assets/tc.jpg) left top repeat-x;
+      }
+
+      .boxD .bottom {
+        padding: 20px 15px;
+        height: 400px;
+        min-height: 255px;
+        background: url(assets/bc.jpg) left bottom repeat-x;
+      }
+
+      /* box có tiêu đề */
+      .boxA-Title {
+        background-color: #abd2ae;
+        font: 12px Arial, Helvetica, sans-serif;
+        text-align: justify;
+      } 
+
+      .boxA-Title .title {
+        padding: 0 31px;
+        font: italic bold 24px/47px Arial, Helvetica, sans-serif;
+      }
+
+      .boxA-Title .line {
+        background-color: #feffff;
+        height: 1px;
+      }
+
+      .boxA-Title .contentBox {
+        padding: 11px;
+      }
+
+      .boxB-Title {
+        background-color: #abd2ae;
+        font: 12px Arial, Helvetica, sans-serif;
+        text-align: justify;
+        border: 2px solid #4f4f4f;
+      }
+
+      .boxB-Title .title {
+        background: url(assets/hearts.png) 12px center no-repeat;
+        padding: 0 43px;
+        font: italic bold 24px/47px Arial, Helvetica, sans-serif;
+      }
+
+      .boxB-Title .line {
+        background-color: #4f4f4f;
+        height: 1px;
+      }
+
+      .boxB-Title .contentBox {
+        padding: 11px;
+      }
+
+      .boxC-Title {
+        background: url(assets/header-tc.jpg) left top repeat-x #abd2ae;
+        font: 12px Arial, Helvetica, sans-serif;
+        text-align: justify;
+        border: 2px solid #4f4f4f;
+      }
+
+      .boxC-Title .title {
+        background: url(assets/hearts.png) 12px center no-repeat;
+        padding: 0 43px;
+        font: italic bold 24px/47px Arial, Helvetica, sans-serif;
+      }
+
+      .boxC-Title .line {
+        background-color: #4f4f4f;
+        height: 1px;
+      }
+
+      .boxC-Title .contentBox {
+        padding: 11px;
+      }
+
+      .boxD-Title {
+        background: url(assets/header-tc.jpg) left top repeat-x #abd2ae;
+        font: 12px Arial, Helvetica, sans-serif;
+        text-align: justify;
+        border: 2px solid #4f4f4f;
+      }
+
+      .boxD-Title .title {
+        background: url(assets/hearts.png) 12px center no-repeat;
+        padding: 0 43px;
+        font: italic bold 24px/47px Arial, Helvetica, sans-serif;
+      }
+
+      .boxD-Title .line {
+        background-color: #4f4f4f;
+        height: 1px;
+      }
+
+      .boxD-Title .contentBox {
+        background: url(assets/tc.jpg) left top repeat-x #feffff;
+        padding: 11px;
+      }
+
+      .boxE-Title {
+        background: url(assets/tc.jpg) left top repeat-x #feffff;
+        font: 12px Arial, Helvetica, sans-serif;
+        text-align: justify;
+        border: 2px solid #4f4f4f;
+      }
+
+      .boxE-Title .title {
+        background: url(assets/hearts.png) 12px center no-repeat;
+        padding: 0 43px;
+        font: italic bold 24px/47px Arial, Helvetica, sans-serif;
+      }
+
+      .boxE-Title .line {
+        background-color: #4f4f4f;
+        height: 1px;
+        margin: 0 12px;
+      }
+
+      .boxE-Title .contentBox {
+        padding: 11px;
+      }
+
+      .boxF-Title {
+        background: #feffff;
+        font: 12px Arial, Helvetica, sans-serif;
+        text-align: justify;
+        border: 2px solid #4f4f4f;
+      }
+
+      .boxF-Title .title {
+        background: url(assets/hearts.png) 12px center no-repeat;
+        padding: 0 43px;
+        font: italic bold 24px/47px Arial, Helvetica, sans-serif;
+      }
+
+      .boxF-Title .line {
+        background-color: #4f4f4f;
+        height: 1px;
+        margin: 0 12px;
+      }
+
+      .boxF-Title .contentBox {
+        padding: 11px;
+      }
+
+      .boxF-Title .top {
+        background: url(assets/tc.jpg) left top repeat-x;
+      }
+
+      .boxF-Title .bot {       
+        min-height: 255px;
+        background: url(assets/bc.jpg) left bottom repeat-x;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- box EX01 -->
+    <div class="right">
+      <div class="boxA" style="padding: 20px 15px">
+        <div class="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+
+    <!-- box EX02 -->
+    <div class="right">
+      <div class="boxB" style="padding: 20px 15px">
+        <div class="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+
+    <!-- box EX03 -->
+    <div class="right">
+      <div class="boxC">
+        <div class="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+
+    <!-- box EX04 -->
+    <div class="right">
+      <div class="boxD">
+        <div class="top">
+          <div class="bottom">
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- box EX05 -->
+    <div class="right">
+      <div class="boxA-Title">
+        <div class="title">Title</div>
+        <div class="line"></div>
+        <div class="contentBox">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+
+    <!-- box EX06 -->
+    <div class="right">
+      <div class="boxB-Title">
+        <div class="title">Title</div>
+        <div class="line"></div>
+        <div class="contentBox">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+
+    <!-- box EX07 -->
+    <div class="right">
+      <div class="boxC-Title">
+        <div class="title">Title</div>
+        <div class="line"></div>
+        <div class="contentBox">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+
+    <!-- box EX08 -->
+    <div class="right">
+      <div class="boxD-Title">
+        <div class="title">Title</div>
+        <div class="line"></div>
+        <div class="contentBox">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+
+    <!-- box EX09 -->
+    <div class="right">
+      <div class="boxE-Title">
+        <div class="title">Title</div>
+        <div class="line"></div>
+        <div class="contentBox">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+
+    <!-- box EX10 -->
+    <div class="right">
+      <div class="boxF-Title">
+        <div class="top">
+          <div class="bot">
+            <div class="title">Title</div>
+            <div class="line"></div>
+            <div class="contentBox">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

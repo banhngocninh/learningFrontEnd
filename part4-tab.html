@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project FontEnd</title>
+    <link rel="stylesheet" href="css/part4-tab.css" />
+
+    <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      /* EX03 */
+      .right {
+        border: 1px solid darkcyan;
+        padding: 20px;
+        width: 600px;
+        margin: 30px auto;
+      }
+
+      #tab-D .tab-boxD {
+        border: 1px solid darkcyan;
+        margin-top: -1px;
+      }
+
+      #tab-D .tab-boxD > a {
+        display: block;
+        
+        padding: 5px 5px 5px 30px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+      }
+
+      #tab-D .tab-boxD > div {
+        display: none;
+      }
+
+      #tab-D .tab-boxD > a:hover, #tab-D .current > a {
+        
+        color: brown;
+      }
+
+      #tab-D .current > div {
+        display: block;
+        padding: 10px;
+        text-align: justify;
+        border-top: 1px solid darkcyan;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- tab dạng ngang EX01 -->
+    <div id="tab-A">
+      <ul class="tabs">
+        <li><a href="#">PHP Script</a></li>
+        <li><a href="#" class="current">ASP Script</a></li>
+        <li><a href="#">JSP Script</a></li>
+      </ul>
+      <div class="clr"></div>
+      <div class="box-wrapper">
+        <div class="tab-box">
+          PHP Script. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="tab-box current">
+          ASP Script. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="tab-box">
+          JSP Script. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+
+    <!-- tab dạng dọc EX02 -->
+    <div id="tab-A-vertical">
+      <ul class="tabs-vertical">
+        <li><a href="#">PHP Script</a></li>
+        <li><a href="#" class="current">ASP Script</a></li>
+        <li><a href="#">JSP Script</a></li>
+      </ul>
+      <div class="box-wrapper-vertical">
+        <div class="tab-box-vertical">
+          PHP Script. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="tab-box-vertical current">
+          ASP Script. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="tab-box-vertical">
+          JSP Script. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+
+    <!-- tab EX03 -->
+    <div class="right">
+      <div id="tab-D">
+        <div class="tab-boxD">
+          <a href="#">PHP Script</a>
+          <div>
+            PHP Script. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        <div class="tab-boxD current">
+          <a href="#">ASP Script</a>
+          <div>
+            ASP Script. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        <div class="tab-boxD">
+          <a href="#">JSP Script</a>
+          <div>
+            JSP Script. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

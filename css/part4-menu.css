@@ -1,0 +1,55 @@
+      /* menu nằm ngang EX02 */
+      .rightHorizontal {
+          margin: 30px auto;
+          width: 1000px;
+          border: 2px solid #f00;
+          padding: 20px;
+          height: 250px;
+      }
+
+      #menuHorizontal ul {
+          list-style: none;
+      }
+
+      #menuHorizontal ul li {
+          border: 1px solid salmon;
+          background-color: aliceblue;
+          width: 150px;
+          text-align: center;
+          float: left;
+          margin-right: 2px;
+          position: relative;
+      }
+
+      #menuHorizontal ul li a {
+          display: block;
+          text-decoration: none;
+          line-height: 24px;
+          color: black;
+      }
+
+      #menuHorizontal ul li a:hover {
+          background-color: aquamarine;
+      }
+
+      #menuHorizontal ul ul {
+          display: none;
+      }
+
+      #menuHorizontal ul ul li {
+          margin-bottom: 2px;
+      }
+
+      #menuHorizontal ul li:hover>ul {
+          display: block;
+          position: absolute;
+          top: 28px;
+          left: -1px;
+      }
+
+      #menuHorizontal ul li ul li:hover>ul {
+          display: block;
+          position: absolute;
+          top: -1px;
+          left: 153px;
+      }

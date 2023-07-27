@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project FontEnd</title>
+    <link rel="stylesheet" href="css/part4-button.css" />
+
+    <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      /* btn EX02 */
+      .btn-link-02 span {
+        display: block;
+        text-align: center;
+        padding: 5px 5px 5px 20px;
+        line-height: 50px;
+        margin-left: 5px;
+        background: url(assets/uncheck.png) left center no-repeat blanchedalmond;
+      }
+
+      .btn-link-02:hover span {
+        background: url(assets/check.png) left center no-repeat
+          rgb(236, 236, 111);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- btn EX01 -->
+    <div class="block">
+      <!--  Cấu trúc sử dụng cho tất cả các loại button -->
+      <a class="btn-link" href="#">
+        <span>Hello World</span>
+      </a>
+    </div>
+
+    <!-- btn EX02 -->
+    <div class="block">
+      <!--  Cấu trúc sử dụng cho tất cả các loại button -->
+      <a class="btn-link-02" href="#">
+        <span>Hello World</span>
+      </a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+.block {
+    border-radius: 5px;
+    width: 500px;
+    border: 2px solid seagreen;
+    margin: 30px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+/* btn EX01 */
+.btn-link {
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 3px;
+    background-color: brown;
+}
+
+.btn-link span {
+    border-radius: 5px;
+    display: block;
+    background: tan;
+    text-align: center;
+    line-height: 50px;
+}
+
+.btn-link:hover {
+    border: 1px solid rosybrown;
+    color: palevioletred;
+}
+
+.btn-link:hover span {
+    background-color: aquamarine;
+}
+
+/* btn EX02 */
+.btn-link-02 {
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #eee;
+    border-color: #eee #eee;
+    background-color: blanchedalmond;
+}
+
+.btn-link-02:hover {
+    background-color: rgb(236, 236, 111);
+}

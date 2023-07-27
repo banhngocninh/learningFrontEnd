@@ -1,0 +1,123 @@
+/* type selector */
+em {
+    color: brown;
+}
+
+/* class selector */
+.big {
+    color: palevioletred;
+    font-size: 20px;
+}
+
+/* class và type */
+p.big {
+    color: olive;
+    font-size: 20px;
+}
+
+/* sử dụng nhiều class */
+/* trong 1 tập tin css, class nào khai báo sau sẽ có độ ưu tiên cao hơn */
+.indent {
+    padding: 10px;
+    color: aquamarine;
+}
+
+/* selector bên trong */
+ul em {
+    font-size: 50px;
+}
+
+/* selector con */
+li>em {
+    color: blue;
+}
+
+/* selector cùng cấp kế bên - chỉ có những selector phía sau sẽ chịu tác động */
+h2+h3 {
+    color: greenyellow;
+}
+
+/* img[src] định dạng các iamge có thuộc tính src */
+img[src] {
+    border: 2px solid rebeccapurple;
+}
+
+/* img[src="assets/road-1.jpg"] định dạng các image có thuôc tính src bằng 1 giá trị nào đó */
+img[src="assets/road-1.jpg"] {
+    border: 2px solid green;
+}
+
+/* img[class~="abc"] định dạng các image có thuôc tính class tồn tại 1 giá trị nào đó */
+img[class~="abc"] {
+    border: 2px solid blue;
+}
+
+/* img[alt|="small"] định dạng các image có thuôc tính alt tồn tại 1 giá trị nào đó */
+img[alt|="small"] {
+    border: 2px solid saddlebrown;
+}
+
+/* img[title*="road"] định dạng các image có thuôc tính title có chứa "road" */
+img[title*="road"] {
+    border: 2px solid rosybrown;
+}
+
+/* img[title^="road"] định dạng các image có thuôc tính title bắt đầu là giá trị "road" */
+img[title^="road"] {
+    border: 2px solid orchid;
+}
+
+/* img[title$="road"] định dạng các image có thuôc tính title kết thúc là giá trị "road" */
+img[title$="road"] {
+    border: 2px solid fuchsia;
+}
+
+a:link {
+    color: rebeccapurple;
+    text-decoration: none;
+}
+
+a:hover {
+    color: palevioletred;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellowgreen;
+    text-decoration: underline;
+    background: chocolate;
+}
+
+a:visited {
+    color: khaki;
+    font-size: 40px;
+    text-decoration: underline;
+    background: aqua;
+}
+
+input:focus {
+    background: yellow;
+}
+
+p[class="a"]::first-letter {
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+}
+
+p[class="a"]::first-line {
+    font-size: 40px;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+p:last-child, ul li[class="b"]:last-child {
+    font-size: 40px;
+    color: darkcyan;
+    font-weight: bold;
+}
+
+p::before {
+    content: "ZendVN";
+}
+

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project FontEnd</title>
+    <link rel="stylesheet" href="css/part4-menu.css" />
+
+    <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      /* menu nằm dọc EX01 */
+      .right {
+        margin: 30px auto;
+        width: 700px;
+        border: 2px solid #f00;
+        padding: 20px;
+        height: 250px;
+      }
+
+      #menu ul {
+        width: 200px;
+      }
+
+      #menu ul li {
+        list-style: none;
+        background: url(assets/straight-right-arrow.png) 10px center no-repeat;
+        border: 1px solid #999;
+        margin-bottom: 2px;
+        position: relative;
+      }
+
+      #menu ul li a {
+        text-decoration: none;
+        color: #000;
+        line-height: 25px;
+        padding-left: 30px;
+        display: block;
+      }
+
+      #menu ul li a:hover {
+        background: url(assets/straight-right-arrow.png) 10px center no-repeat;
+        background-color: wheat;
+      }
+
+      #menu ul ul {
+        display: none;
+      }
+
+      #menu ul li:hover > ul {
+        /* dấu > làm cho chỉ tác dụng đối với ul là con của li */
+        display: block;
+        position: absolute;
+        top: -1px;
+        left: 200px;
+      }
+
+      /* menu nằm ngang EX03 */
+      .rightHorizontal-03 {
+        margin: 30px auto;
+        width: 1000px;
+        border: 2px solid #f00;
+        padding: 20px;
+        height: 250px;
+      }
+
+      #menuHorizontal-03 ul {
+        list-style: none;
+      }
+
+      #menuHorizontal-03 ul li {
+        border: 1px solid salmon;
+        background-color: aliceblue;
+        width: 150px;
+        text-align: center;
+        float: left;
+        margin-right: 2px;
+        position: relative;
+      }
+
+      #menuHorizontal-03 ul li ul li {
+        margin-top: 2px;
+        /* float: left;
+        width: 100px; */
+      }
+
+      #menuHorizontal-03 ul li a {
+        display: block;
+        text-decoration: none;
+        line-height: 24px;
+        color: black;
+      }
+
+      #menuHorizontal-03 ul li a:hover {
+        background-color: aquamarine;
+      }
+
+      #menuHorizontal-03 ul ul {
+        display: none;
+        width: 1000px;
+      }
+
+      #menuHorizontal-03 ul li:hover > ul {
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: -1px;
+        z-index: 9999;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- EX01 -->
+    <div class="right">
+      <div id="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#">News</a>
+            <ul>
+              <li>
+                <a href="#">Tin trong nuoc</a>
+                <ul>
+                  <li><a href="#">Kinh te</a></li>
+                  <li><a href="#">Chinh tri</a></li>
+                  <li><a href="#">Giao duc</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Tin quoc te</a>
+                <ul>
+                  <li><a href="#">Cong nghe</a></li>
+                  <li><a href="#">Tai chinh</a></li>
+                  <li><a href="#">Ngoai giao</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Tin trong nha</a></li>
+              <li><a href="#">Tin noi bo</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- EX02 -->
+    <div class="rightHorizontal">
+      <div id="menuHorizontal">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#">News</a>
+            <ul>
+              <li>
+                <a href="#">Tin trong nuoc</a>
+                <ul>
+                  <li><a href="#">Kinh te</a></li>
+                  <li><a href="#">Chinh tri</a></li>
+                  <li><a href="#">Giao duc</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Tin quoc te</a>
+                <ul>
+                  <li><a href="#">Cong nghe</a></li>
+                  <li><a href="#">Tai chinh</a></li>
+                  <li><a href="#">Ngoai giao</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Tin trong nha</a></li>
+              <li><a href="#">Tin noi bo</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- EX03 -->
+    <div class="rightHorizontal-03">
+      <div id="menuHorizontal-03">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#">News</a>
+            <ul>
+              <li><a href="#">Tin trong nuoc</a></li>
+              <li><a href="#">Tin quoc te</a></li>
+              <li><a href="#">Tin trong nha</a></li>
+              <li><a href="#">Tin noi bo</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

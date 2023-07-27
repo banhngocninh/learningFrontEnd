@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project FontEnd</title>
+    <link rel="stylesheet" href="css/part3.css" />
+
+    <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      
+      p[class="c"]::after {
+        content: "by ZendVN";
+        content: url(assets/road-1.jpg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- selector - css Ex01 -->
+    <p class="big indent">This is some <em>text</em></p>
+    <p>This is some text</p>
+    <h3>New text - h3.0</h3>
+    <h2>New text - h2</h2>
+    <h3>New text - h3</h3>
+    <h3>New text - h3.1</h3>
+    <ul>
+      <li>List item</li>
+      <li class="big">List item</li>
+      <li>
+        List <em>item</em>
+        <p>This is a <em>text</em></p>
+      </li>
+    </ul>
+
+    <!-- selector - css Ex02 -->
+    <img
+      src="assets/road-1.jpg"
+      title="road1"
+      alt="small-road 1"
+      class="abc xyz"
+    />
+    <img src="" title="road" alt="roadInForest" />
+
+    <!-- selector - css Ex03 -->
+    <br />
+    <a href="https://zendvn.com/">ZendVN</a>
+    |
+    <a href="https://google.com/">Google</a>
+
+    <!-- selector - css Ex04 -->
+    <form id="main" action>
+      Email: <input type="text" /> <br />
+      Password: <input type="password" /> <br />
+    </form>
+
+    <!-- selector - css Ex05 -->
+    <p class="a">
+      This is a test 1 This is a test 2 This is a test 2 This is a test 2 This
+      is a test 2 This is a test 2 This is a test 2 This is a test 2 This is a
+      test 2 This is a test 2 This is a test 2
+    </p>
+    <p class="a">This is a test 2</p>
+    <p class="a">This is a test 3</p>
+
+    <!-- selector - css Ex06 -->
+    <p class="b">
+      This is a test 1 This is a test 2 This is a test 2 This is a test 2 This
+      is a test 2 This is a test 2 This is a test 2 This is a test 2 This is a
+      test 2 This is a test 2 This is a test 2
+    </p>
+    <p>This is a test 2</p>
+    <p>This is a test 3</p>
+
+    <ul>
+      <li class="b">1</li>
+      <li class="b">2</li>
+      <li class="b">3</li>
+    </ul>
+
+    <p class="c">Khoá học "Làm chủ giao diện website"</p>
+  </body>
+</html>
