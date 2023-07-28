@@ -1,4 +1,4 @@
-/* type group */
+/* type group EX01*/
 .text {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -11,27 +11,20 @@
     text-decoration: overline;
 }
 
+.container {
+    margin-top: 20px;
+    width: 400px;
+    height: 200px;
+    border: 2px solid #999;
+  }
+
+/* EX03 */
 .block {
     width: 600px;
     height: 900px;
     border: 3px solid #999;
     margin: 20px auto;
-    /* auto để căn chỉnh chính giữa */
-}
-
-/* blockGroup */
-.blockElements {
-    width: 150px;
-    height: 150px;
-    text-align: center;
-    line-height: 150px;
-}
-
-.blockListGroup {
-    width: 800px;
-    margin: 20px auto;
-    height: 250px;
-    border: 2px solid #f00;
+    /* 20px là trên và dưới, auto để căn chỉnh chính giữa */
 }
 
 .blockGroup {
@@ -46,6 +39,147 @@
 
 .blockGroup span {
     vertical-align: 15px;
+    color: #9bbb5a;
+}
+
+/* EX04 */
+#main {
+    display: table;
+}
+
+.left {
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    display: table-cell;
+}
+
+.content {
+    background-color: blue;
+    height: 200px;
+    width: 500px;
+    display: table-cell;
+}
+
+.right {
+    background-color: red;
+    height: 200px;
+    width: 300px;
+    display: table-cell;
+}
+
+/* borderedGroup EX05 */
+.bordered {
+    /* border-top-width: thin;
+    border-top-style: dotted;
+    border-top-color: blueviolet; */
+
+    /* border-right-width: thin;
+    border-right-style: double;
+    border-right-color: rgb(56, 27, 27); */
+
+    /* border-bottom-width: thick;
+    border-bottom-style: dashed;
+    border-bottom-color: rgb(11, 64, 100); */
+
+    /*  border-left-width: thick;
+    border-left-style: groove;
+    border-left-color: rgb(43, 205, 226); */
+
+    /*  border-top: thin dotted blueviolet;
+    border-right: thin double rgb(56, 27, 27);
+    border-bottom: thick dashed rgb(11, 64, 100);
+    border-left: thick groove rgb(43, 205, 226); */
+
+    border-width: thin thin thick thick;
+    border-style: dotted double dashed groove;
+    border-color: blueviolet rgb(56, 27, 27) rgb(11, 64, 100) rgb(43, 205, 226);
+}
+
+/* boxPart1 EX06 */
+.box {
+    width: 250px;
+    border: 2px solid #999;
+    /* height: 500px; */
+    min-height: 300px;
+    margin: 50px auto;
+    text-align: justify;
+}
+
+/* blockGroup EX07 */
+.blockElements {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+}
+
+/* boxPart1 */
+.boxA {
+    background-color: #c0514e;
+    float: left;
+}
+
+/* boxPart1 */
+.boxB {
+    background-color: #4cacc6;
+    float: left;
+}
+
+/* boxPart1 */
+.boxC {
+    background-color: #f79647;
+    float: right;
+}
+
+/* boxPart1 */
+.boxD {
+    /* width: 100%; */
+    background-color: #9bbb5a;
+    float: left;
+}
+
+/* boxPart1 */
+.boxE {
+    /* width: 100%; */
+    background-color: #999;
+    margin: auto;
+}
+
+/* boxPart1 */
+.clr {
+    clear: both;
+}
+
+/* EX08, EX09 */
+.blockListGroup {
+    width: 800px;
+    margin: 20px auto;
+    height: 250px;
+    border: 2px solid #f00;
+}
+
+.blockHorizontally {
+    width: 120px;
+    margin-right: 2px;
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+
+.menu li {
+    border: 1px solid #c0514e;
+    margin-bottom: 2px;
+    padding: 3px 3px 3px 15px;
+}
+
+.menu li.active {
+    background-color: aquamarine;
+}
+
+.menu li:hover {
+    background-color: aquamarine;
+    color: #f00;
 }
 
 .positionGroup {
@@ -130,124 +264,6 @@
     z-index: 998;
 }
 
-/* borderedGroup */
-.bordered {
-    /* border-top-width: thin;
-    border-top-style: dotted;
-    border-top-color: blueviolet; */
-
-    /* border-right-width: thin;
-    border-right-style: double;
-    border-right-color: rgb(56, 27, 27); */
-
-    /* border-bottom-width: thick;
-    border-bottom-style: dashed;
-    border-bottom-color: rgb(11, 64, 100); */
-
-    /*  border-left-width: thick;
-    border-left-style: groove;
-    border-left-color: rgb(43, 205, 226); */
-
-    /*  border-top: thin dotted blueviolet;
-    border-right: thin double rgb(56, 27, 27);
-    border-bottom: thick dashed rgb(11, 64, 100);
-    border-left: thick groove rgb(43, 205, 226); */
-
-    border-width: thin thin thick thick;
-    border-style: dotted double dashed groove;
-    border-color: blueviolet rgb(56, 27, 27) rgb(11, 64, 100) rgb(43, 205, 226);
-}
-
-#main {
-    display: table;
-}
-
-.left {
-    background-color: aqua;
-    height: 200px;
-    width: 200px;
-    display: table-cell;
-}
-
-.content {
-    background-color: blue;
-    height: 200px;
-    width: 500px;
-    display: table-cell;
-}
-
-.right {
-    background-color: red;
-    height: 200px;
-    width: 300px;
-    display: table-cell;
-}
-
-/* boxPart1 */
-.box {
-    width: 250px;
-    border: 2px solid #999;
-    /* height: 500px; */
-    min-height: 300px;
-    margin: 50px auto;
-    text-align: justify;
-}
-
-/* boxPart1 */
-.boxA {
-    background-color: #c0514e;
-    float: left;
-}
-
-/* boxPart1 */
-.boxB {
-    background-color: #4cacc6;
-    float: left;
-}
-
-/* boxPart1 */
-.boxC {
-    background-color: #f79647;
-    float: right;
-}
-
-/* boxPart1 */
-.boxD {
-    /* width: 100%; */
-    background-color: #9bbb5a;
-    float: left;
-}
-
-/* boxPart1 */
-.boxE {
-    /* width: 100%; */
-    background-color: #999;
-    margin: auto;
-}
-
-/* boxPart1 */
-.clr {
-    clear: both;
-}
-
-.blockHorizontally {
-    width: 120px;
-    margin-right: 2px;
-    float: left;
-    list-style: none;
-    text-align: center;
-}
-
-.menu li {
-    border: 1px solid #c0514e;
-    margin-bottom: 2px;
-    padding: 3px 3px 3px 15px;
-}
-
-.menu li.active {
-    background-color: aquamarine;
-}
-
 .boxImage {
     width: 100%;
     height: 30px;
@@ -255,6 +271,7 @@
     border: 1px solid #c0514e;
     text-align: center;
     line-height: 30px;
+    z-index: 1001;
 }
 
 .top {
@@ -389,6 +406,7 @@
 
 /* slide2 */
 .imageList {
+    margin-bottom: 50px;
     width: 1806px; /* giúp hình ảnh trên cùng 1 dòng */
 }
 
