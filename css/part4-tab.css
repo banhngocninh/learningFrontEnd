@@ -112,8 +112,8 @@
 }
 
 #tab-D .tab-boxD>a {
+    background: url(../assets/straight-right-arrow.png) 10px center no-repeat;
     display: block;
-
     padding: 5px 5px 5px 30px;
     text-decoration: none;
     font-weight: bold;
@@ -126,7 +126,7 @@
 
 #tab-D .tab-boxD>a:hover,
 #tab-D .current>a {
-
+    background: url(../assets/check-arrow-down.png) 10px center no-repeat;
     color: brown;
 }
 

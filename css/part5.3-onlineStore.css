@@ -150,6 +150,12 @@ hãy để chiều cao phụ thuộc vào nội dung bên trong */
     font-size: 18px;
 }
 
+#wrapper .main .right .box .title {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+}
+
 /* định dạng cho các title Login Form, Search, Category */
 .box .title {
     padding-left: 12px;
@@ -176,6 +182,7 @@ hãy để chiều cao phụ thuộc vào nội dung bên trong */
     font-size: 10px;
     color: #a1b4da;
     padding-top: 2px;
+    border: 1px solid #d2d2d2;
 }
 
 /* phần này tách ra vì nếu gộp chung với 
@@ -269,76 +276,58 @@ input sẽ định dạng luôn cho phần tick Remember Me */
 }
 
 /* right content-main */
-#wrapper .main .right #box-breadcrumb,
-#wrapper .main .right #box-categories {
+#wrapper .main .right #box-FAQs {
     border-radius: 8px;
     background-color: #fff;
-    padding: 12px;
     width: 700px;
     margin-left: 240px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
-#wrapper .main .right #box-breadcrumb a {
-    color: #447f60;
-
+#wrapper .main .right #box-FAQs .child-title {
+    color: rgb(129, 153, 38);
+    text-transform: uppercase;
+    margin: 10px 0 30px 12px;
 }
 
-#wrapper .main .right #box-breadcrumb a:hover {
-    text-decoration: underline;
-
-}
-
-#wrapper .main .right #box-breadcrumb a.active {
-    text-decoration: underline;
-    color: #2a002a;
-}
-
-#wrapper #box-categories .box-category {
-    border-radius: 8px;
-    height: 206px;
-    width: 160px;
-    background-color: #fff;
+#wrapper .main .right #box-FAQs .content .tab-box a {
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    display: block;
     border: 1px solid #d2d2d2;
-    display: inline-block;
-    margin-right: 4px;
-    position: relative;
+    padding: 20px 20px 20px 35px;
+    margin: 0 12px;
+    margin-top: -1px;
+    background: url(../assets/straight-right-arrow.png) 10px center no-repeat;
 }
 
-#wrapper #box-categories .box-category .image {
-    position: absolute;
-    height: 166px;
-    width: 100%;
-    top: 0px;
-    right: 0px;
-    line-height: 166px;
-    text-align: center;
+#wrapper .main .right #box-FAQs .content .tab-box a:hover,
+#wrapper .main .right #box-FAQs .content .tab-box a.current {
+    color: rgb(129, 153, 38);
+    font-weight: bold;
+    background: url(../assets/check-arrow-down.png) 10px center no-repeat;
 }
 
-#wrapper #box-categories .box-category .image img{
-    vertical-align: middle;
+#wrapper .main .right #box-FAQs .tab-box div {
+    border: 1px solid #d2d2d2;
+    margin-top: -1px;
+    margin: 0 12px;
+    background-color: f8f6f8;
 }
 
-#wrapper #box-categories .box-category .title {
-    position: absolute;
-    width: 148px;
-    height: 40px;
-    line-height: 40px;
-    left: 0px;
-    bottom: 0px;
-    text-align: center;
-    border-top: 1px solid #d2d2d2;
+#wrapper .main .right #box-FAQs .tab-box>div {
+    display: none;
 }
 
-#wrapper #box-categories .box-category .title a {
-    color: #3f3f5f;
+#wrapper .main .right #box-FAQs .current>div {
+    display: block;
+    padding: 25px;
+    text-align: justify;
+    line-height: 24px;
+    margin-top: -1px;
 }
-
-#wrapper #box-categories .box-category .title a:hover {
-    color: #00f;
-    text-decoration: underline;
-}
-
 
 /* ============================ định dạng cho phần footer ============================ */
 
