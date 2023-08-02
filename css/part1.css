@@ -1,4 +1,19 @@
-/*# sourceMappingURL=main.css.map */
+#box-id {
+    /* id */
+    width: 600px;
+}
+
+.box {
+    /* class */
+    border: 2px solid #f00;
+    width: 100px;
+}
+
+div {
+    /* selector */
+    border: 3px solid #999;
+    padding: 5px;
+}
 
 .div {
     border: 1px solid #000;

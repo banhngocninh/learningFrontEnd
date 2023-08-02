@@ -98,3 +98,41 @@
     display: block;
 }
 
+/* EX03 */
+.right {
+    border: 1px solid darkcyan;
+    padding: 20px;
+    width: 600px;
+    margin: 30px auto;
+}
+
+#tab-D .tab-boxD {
+    border: 1px solid darkcyan;
+    margin-top: -1px;
+}
+
+#tab-D .tab-boxD>a {
+    display: block;
+
+    padding: 5px 5px 5px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#tab-D .tab-boxD>div {
+    display: none;
+}
+
+#tab-D .tab-boxD>a:hover,
+#tab-D .current>a {
+
+    color: brown;
+}
+
+#tab-D .current>div {
+    display: block;
+    padding: 10px;
+    text-align: justify;
+    border-top: 1px solid darkcyan;
+}

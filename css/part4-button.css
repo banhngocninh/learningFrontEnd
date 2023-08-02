@@ -55,3 +55,16 @@
 .btn-link-02:hover {
     background-color: rgb(236, 236, 111);
 }
+
+.btn-link-02 span {
+    display: block;
+    text-align: center;
+    padding: 5px 5px 5px 20px;
+    line-height: 50px;
+    margin-left: 5px;
+    background: url(../assets/uncheck.png) left center no-repeat blanchedalmond;
+}
+
+.btn-link-02:hover span {
+    background: url(../assets/check.png) left center no-repeat rgb(236, 236, 111);
+}

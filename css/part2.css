@@ -16,7 +16,23 @@
     width: 400px;
     height: 200px;
     border: 2px solid #999;
-  }
+}
+
+/* backgroundGroup EX02 */
+.background {
+    background-color: aqua;
+    background-image: url(../assets/moroccan-flower.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    /* background: aqua url(assets/moroccan-flower.png) no-repeat center center fixed; */
+    /* fixed: background sẽ luôn ở đúng vị trí toạ độ đối với màn hình chúng ta thấy */
+    /* scroll: background sẽ luôn ở vị trí toạ độ đối với đối tượng sử dụng background */
+}
+
+.src {
+    background-image: url(../assets/moroccan-flower.png);
+}
 
 /* EX03 */
 .block {
@@ -167,6 +183,12 @@
     text-align: center;
 }
 
+/* listGroup EX08 */
+.menu {
+    list-style: inside url(assets/hearts.png);
+    margin: 20px;
+}
+
 .menu li {
     border: 1px solid #c0514e;
     margin-bottom: 2px;
@@ -182,6 +204,7 @@
     color: #f00;
 }
 
+/* EX10, EX13 */
 .positionGroup {
     width: 400px;
     height: 250px;
@@ -189,6 +212,12 @@
     border: 2px solid #f00;
     position: relative;
     line-height: 100px;
+}
+
+/* EX10, EX13 */
+.positionBox {
+    width: 100px;
+    height: 100px;
 }
 
 .positionBoxA {
@@ -212,6 +241,9 @@
     background-color: #f79647;
     text-align: center;
     line-height: 100px;
+    /* left: 0px;
+    top: 0px;
+    position: absolute; */
 }
 
 .positionBoxD {
@@ -223,11 +255,26 @@
     position: absolute;
 }
 
-.positionBox {
-    width: 100px;
-    height: 100px;
+/* EX11 */
+.boxImage {
+    width: 100%;
+    height: 30px;
+    background-color: gold;
+    border: 1px solid #c0514e;
+    text-align: center;
+    line-height: 30px;
+    z-index: 1001;
 }
 
+.contentImage {
+    margin: 20px auto;
+    width: 600px;
+    height: 800px;
+    border: 2px solid #13701f;
+    background: url(../assets/moroccan-flower.png) top center no-repeat;
+}
+
+/* EX13 */
 .positionBoxA1 {
     background-color: #c0514e;
     text-align: center;
@@ -264,16 +311,6 @@
     z-index: 998;
 }
 
-.boxImage {
-    width: 100%;
-    height: 30px;
-    background-color: aqua;
-    border: 1px solid #c0514e;
-    text-align: center;
-    line-height: 30px;
-    z-index: 1001;
-}
-
 .top {
     top: 0px;
     position: fixed;
@@ -284,7 +321,16 @@
     position: fixed;
 }
 
-/* boxGroupPart2 */
+.leftPosition {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    top: 50%;
+    position: fixed;
+    left: 20px;
+}
+
+/* boxGroupPart2 EX12 */
 /* ngoài sử dụng float left thì có thể sử dụng display: table và display: table-cell */
 #mainBoxGroup {
     width: 1000px;
@@ -337,16 +383,7 @@
     background-color: rgb(89, 0, 255);
 } */
 
-.leftPosition {
-    width: 50px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    top: 50%;
-    position: fixed;
-    left: 20px;
-}
-
+/* EX14 */
 .overlay {
     width: 100%;
     height: 100%;
@@ -377,7 +414,7 @@
 
 /* height = 1000px, width = 1200px, top = 50% * height, left = 50% * width, margin-top = -(height/2), margin-left = -(width/2) */
 
-/* slide */
+/* slide EX15 */
 .image {
     border: 2px solid #4e7fc0;
     margin: 20px auto;
@@ -388,6 +425,7 @@
 .bar {
     position: absolute;
     bottom: 0px;
+    /* bottom 0px dùng để định dạng cho chủ thể nằm cuối */
     background-color: #000;
     opacity: 0.6;
     filter: alpha(opacity=60);
@@ -404,23 +442,26 @@
 }
 
 
-/* slide2 */
-.imageList {
-    margin-bottom: 50px;
-    width: 1806px; /* giúp hình ảnh trên cùng 1 dòng */
-}
-
+/* slide2 EX16 */
 .slider {
     margin: 30px auto;
     width: 800px;
     border: 2px solid olivedrab;
     padding: 3px;
-    overflow-x: hidden; /* ẩn bớt hình ảnh theo chiều ngàng */
+    overflow-x: hidden;
+    /* ẩn bớt hình ảnh theo chiều ngàng */
+}
+
+.imageList {
+    margin-bottom: 50px;
+    width: 1810px;
+    /* giúp hình ảnh trên cùng 1 dòng */
 }
 
 .image2 {
     border: 1px solid olivedrab;
-    float: left; /* để các ảnh nằm trên cùng 1 hàng */
+    float: left;
+    /* để các ảnh nằm trên cùng 1 hàng */
     margin: 0 2px 0 0;
     padding: 2px;
 }

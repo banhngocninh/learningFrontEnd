@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Store</title>
+    <link rel="stylesheet" href="css/part5-onlineStore.css" />
+
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Header Start Here -->
+      <div id="header">
+        <div class="top-bar">
+          <!-- Logo -->
+          <div class="logo">
+            &nbsp;<img src="assets/logo.jpg" alt="logo" />&nbsp;
+          </div>
+          <!-- Currency -->
+          <div class="currency">
+            <span>Currency</span>
+            <select>
+              <option>US Dollar &#8364;</option>
+              <option>VNĐ đ</option>
+            </select>
+            <a class="btn-link" href="#"><span>Change</span></a>
+          </div>
+          <div class="clr"></div>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li><a href="#">Online Store</a></li>
+            <li class="line-w-45"></li>
+            <li><a href="#">About Us</a></li>
+            <li class="line-w-45"></li>
+            <li><a href="#">Delivery</a></li>
+            <li class="line-w-45"></li>
+            <li><a href="#">FAQs</a></li>
+            <li class="line-w-45"></li>
+            <li><a href="#">Contact</a></li>
+            <li class="line-w-45"></li>
+            <li class="card">
+              <span>My card: </span> Your card is currently
+              <a href="#">empty</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Header End Here -->
+
+      <!-- Content Start Here -->
+      <div class="main">
+        <div class="left">
+          <div class="box" id="box-login">
+            <h3 class="title">Login Form</h3>
+            <form action="#" method="post" id="login-form">
+              <div class="row" style="margin-bottom: 11px">
+                <input type="text" value="User Name" />
+              </div>
+              <div class="row">
+                <input type="text" value="Password" />
+              </div>
+              <div class="row">
+                <a class="btn-link" href="#"><span>Login</span></a>
+              </div>
+              <div class="row">
+                <input type="checkbox" name="checkbox" id="checkbox" />
+                <label>Remember Me</label>
+              </div>
+              <div class="row">
+                <a href="#">Forgot your password</a>
+              </div>
+              <div class="row">
+                <a href="#">Create an account</a>
+              </div>
+            </form>
+          </div>
+
+          <div class="box" id="box-search">
+            <h3 class="title">Search</h3>
+            <form action="#" method="post" id="search-form">
+              <div class="row">
+                <input type="text" value="search..." />
+                <img src="assets/search.png" alt="search" />
+              </div>
+            </form>
+          </div>
+
+          <div class="line-h-220"></div>
+
+          <div class="box" id="box-special">
+            <h3 class="title">Specials</h3>
+            <div class="special-products">
+              <div class="img-products">
+                <a href="#">
+                  &nbsp;
+                  <img src="assets/product-01.png" alt="product-01" />&nbsp;
+                </a>
+              </div>
+              <div class="info-products">
+                <p>
+                  <a href="#"> Lorem ipsum dolor </a>
+                </p>
+                <span>$140.00</span>
+              </div>
+              <div class="clr"></div>
+            </div>
+
+            <div class="special-products">
+              <div class="img-products">
+                <a href="#">
+                  &nbsp;
+                  <img src="assets/product-02.png" alt="product-02" />&nbsp;
+                </a>
+              </div>
+              <div class="info-products">
+                <p>
+                  <a href="#"> Lorem ipsum dolor </a>
+                </p>
+                <span>$140.00</span>
+              </div>
+              <div class="clr"></div>
+            </div>
+
+            <div class="special-products">
+              <div class="img-products">
+                <a href="#">
+                  &nbsp;
+                  <img src="assets/product-03.png" alt="product-03" />&nbsp;
+                </a>
+              </div>
+              <div class="info-products">
+                <p>
+                  <a href="#"> Lorem ipsum dolor </a>
+                </p>
+                <span>$140.00</span>
+              </div>
+              <div class="clr"></div>
+            </div>
+
+            <div class="special-products">
+              <div class="img-products">
+                <a href="#">
+                  &nbsp;
+                  <img src="assets/product-04.png" alt="product-04" />&nbsp;
+                </a>
+              </div>
+              <div class="info-products">
+                <p>
+                  <a href="#"> Lorem ipsum dolor </a>
+                </p>
+                <span>$140.00</span>
+              </div>
+              <div class="clr"></div>
+            </div>
+
+            <div class="special-products">
+              <div class="img-products">
+                <a href="#">
+                  &nbsp;
+                  <img src="assets/product-05.png" alt="product-05" />&nbsp;
+                </a>
+              </div>
+              <div class="info-products">
+                <p>
+                  <a href="#"> Lorem ipsum dolor </a>
+                </p>
+                <span>$140.00</span>
+              </div>
+              <div class="clr"></div>
+            </div>
+
+            <div class="special-products" style="border-bottom: none">
+              <div class="img-products">
+                <a href="#">
+                  &nbsp;
+                  <img src="assets/product-06.png" alt="product-06" />&nbsp;
+                </a>
+              </div>
+              <div class="info-products">
+                <p>
+                  <a href="#"> Lorem ipsum dolor </a>
+                </p>
+                <span>$140.00</span>
+              </div>
+              <div class="clr"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="slide">
+            <img src="assets/slide-image.jpg" alt="slide" />
+          </div>
+          <div class="line-h-700"></div>
+          <div class="col1">
+            <div class="product-picture product-pic-left">
+              <div class="image">
+                <img src="assets/product-big-01.png" alt="product-big-01" />
+              </div>
+              <div class="info">
+                <p>Lorem ipsum dolor</p>
+                <span>$140.00</span>
+                <a href="#">Add to card</a>
+              </div>
+            </div>
+
+            <div class="product-picture product-pic-right">
+              <div class="image">
+                <img src="assets/product-big-02.png" alt="product-big-02" />
+              </div>
+              <div class="info">
+                <p>Lorem ipsum dolor</p>
+                <span>$140.00</span>
+                <a href="#">Add to card</a>
+              </div>
+            </div>
+
+            <div
+              class="product-picture product-pic-left"
+              style="border-bottom: none"
+            >
+              <div class="image">
+                <img src="assets/product-big-03.png" alt="product-big-03" />
+              </div>
+              <div class="info">
+                <p>Lorem ipsum dolor</p>
+                <span>$140.00</span>
+                <a href="#">Add to card</a>
+              </div>
+            </div>
+
+            <div
+              class="product-picture product-pic-right"
+              style="border-bottom: none"
+            >
+              <div class="image">
+                <img src="assets/product-big-04.png" alt="product-big-04" />
+              </div>
+              <div class="info">
+                <p>Lorem ipsum dolor</p>
+                <span>$140.00</span>
+                <a href="#">Add to card</a>
+              </div>
+            </div>
+          </div>
+          <div class="col2">
+            <div class="box" id="box-category">
+              <div class="content">
+                <h3 class="title">Category</h3>
+                <ul>
+                  <li><a href="#">Living Room Sets(9)</a></li>
+                  <li><a href="#">Leather Living Rooms(6)</a></li>
+                  <li><a href="#">Sofas(6)</a></li>
+                  <li><a href="#">Sectionals(6)</a></li>
+                  <li><a href="#">Loveseats(6)</a></li>
+                  <li><a href="#">Sleepers(6)</a></li>
+                  <li><a href="#">Chairs(6)</a></li>
+                  <li><a href="#">Recliners(5)</a></li>
+                  <li><a href="#">Chaises(5)</a></li>
+                  <li><a href="#">Ottomans(4)</a></li>
+                  <li><a href="#">Cocktail Ottomans(5)</a></li>
+                  <li><a href="#">Sofa Tables(4)</a></li>
+                  <li><a href="#">Coffee Tables(3)</a></li>
+                  <li><a href="#">Bedroom Sets(4)</a></li>
+                  <li class="active"><a href="#">Beds(5)</a></li>
+                  <li style="border-bottom: none">
+                    <a href="#">Guest Beds(3)</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="banner">
+              <img src="assets/banner-01.jpg" alt="Banner" />
+            </div>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!-- Content End Here -->
+
+      <!-- Footer Start Here -->
+      <div class="footer">
+        <div class="slide">
+          <div class="box" id="box-slide">
+            <div class="arrow-left">
+              <img src="assets/arrow-left.png" alt="Left" />
+            </div>
+            <div class="arrow-right">
+              <img src="assets/arrow-right.png" alt="Right" />
+            </div>
+
+            <ul>
+              <li>
+                <img src="assets/product-01.png" alt="product-01" />
+                <div class="info">
+                  <div class="overflow"></div>
+                  <a href="#">Living room</a>
+                </div>
+              </li>
+              <li>
+                <img src="assets/product-02.png" alt="product-02" />
+                <div class="info">
+                  <div class="overflow"></div>
+                  <a href="#">Living room</a>
+                </div>
+              </li>
+              <li>
+                <img src="assets/product-03.png" alt="product-03" />
+                <div class="info">
+                  <div class="overflow"></div>
+                  <a href="#">Living room</a>
+                </div>
+              </li>
+              <li>
+                <img src="assets/product-04.png" alt="product-04" />
+                <div class="info">
+                  <div class="overflow"></div>
+                  <a href="#">Living room</a>
+                </div>
+              </li>
+              <li>
+                <img src="assets/product-05.png" alt="product-05" />
+                <div class="info">
+                  <div class="overflow"></div>
+                  <a href="#">Living room</a>
+                </div>
+              </li>
+              <li>
+                <img src="assets/product-06.png" alt="product-06" />
+                <div class="info">
+                  <div class="overflow"></div>
+                  <a href="#">Living room</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="line-full"></div>
+        <div class="copyright">
+          <div class="back-to-top"><a href="#wrapper">Top</a></div>
+          <p class="copyright-left">
+            Copyright 2023 Interior. All Rights Reserved<br />
+            Joomla! is Free Software released under the GNU.
+          </p>
+          <p class="copyright-right">
+            <a href="#"><img src="assets/youtube.png" alt="youtube" /></a>
+            <a href="#"><img src="assets/twitter.png" alt="twitter" /></a>
+            <a href="#"><img src="assets/gmail.png" alt="gmail" /></a>
+            <a href="#"><img src="assets/facebook.png" alt="facebook" /></a>
+          </p>
+          <div class="clr"></div>
+        </div>
+      </div>
+      <!-- Footer End Here -->
+    </div>
+  </body>
+</html>

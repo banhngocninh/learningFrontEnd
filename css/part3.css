@@ -18,8 +18,8 @@ p.big {
 /* sử dụng nhiều class */
 /* trong 1 tập tin css, class nào khai báo sau sẽ có độ ưu tiên cao hơn */
 .indent {
-    padding: 10px;
-    color: aquamarine;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* selector bên trong */
@@ -30,6 +30,7 @@ ul em {
 /* selector con */
 li>em {
     color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* selector cùng cấp kế bên - chỉ có những selector phía sau sẽ chịu tác động */
@@ -111,13 +112,18 @@ p[class="a"]::first-line {
     font-weight: bold;
 }
 
-p:last-child, ul li[class="b"]:last-child {
+p:last-child,
+ul li[class="b"]:last-child {
     font-size: 40px;
     color: darkcyan;
     font-weight: bold;
 }
 
-p::before {
+p[class="c"]::before {
     content: "ZendVN";
 }
 
+p[class="c"]::after {
+    content: "by ZendVN";
+    content: url(../assets/road-1.jpg);
+}
