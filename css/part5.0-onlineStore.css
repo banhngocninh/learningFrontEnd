@@ -86,9 +86,6 @@ khi so với top-bar và khi so với bản thân logo */
     border-radius: 8px;
     height: 45px;
     background: url(../assets/menu-content.jpg) center top repeat;
-}
-
-#wrapper #header .menu ul {
     position: relative;
 }
 
@@ -109,7 +106,7 @@ khi so với top-bar và khi so với bản thân logo */
 }
 
 /* định dạng cho những thẻ là con của class card 
-- hiện tại đang là My card: Your card is curently */
+- hiện tại đang là My card: Your card is currently */
 #wrapper #header .menu ul li.card {
     position: absolute;
     right: 22px;
@@ -138,8 +135,6 @@ khi so với top-bar và khi so với bản thân logo */
 
 /* left content-main */
 #wrapper .main .left {
-    height: 500px;
-    width: 220px;
     float: left;
 }
 
@@ -211,82 +206,82 @@ input sẽ định dạng luôn cho phần tick Remember Me */
     text-decoration: underline;
 }
 
-#wrapper .main .left #box-search {
+#box-search {
     border-radius: 8px;
     background-color: #fff;
     height: 104px;
     min-height: 104px;
 }
 
-#wrapper .main .left #box-search #search-form .row {
+#box-search #search-form .row {
     position: relative;
 }
 
-#wrapper .main .left #box-search #search-form .row img {
+#box-search #search-form .row img {
     position: absolute;
     top: 4px;
     right: 30px;
 }
 
-#wrapper .main .left #box-search #search-form .row img:hover {
+#box-search #search-form .row img:hover {
     cursor: pointer;
     opacity: 0.6;
     filter: alpha(opacity=60);
 }
 
-#wrapper .main .left #box-special {
+#box-special {
     border-radius: 8px;
     background-color: #fff;
 }
 
-#wrapper .main .left #box-special .special-products {
+#box-special .special-products {
     border-bottom: 1px solid #d2d2d2;
     margin: 0 12px;
 }
 
-#wrapper .main .left #box-special .special-products .img-products {
+#box-special .special-products .img-products {
     height: 121px;
     line-height: 121px;
     float: left;
     width: 80px;
 }
 
-#wrapper .main .left #box-special .special-products .img-products img {
+#box-special .special-products .img-products img {
     vertical-align: middle;
 }
 
-#wrapper .main .left #box-special .special-products .info-products {
+#box-special .special-products .info-products {
     padding: 27px 0;
 }
 
-#wrapper .main .left #box-special .special-products .info-products p {
+#box-special .special-products .info-products p {
     margin-bottom: 27px;
 }
 
-#wrapper .main .left #box-special .special-products .info-products a {
+#box-special .special-products .info-products a {
     color: #5e3e7e;
 }
 
-#wrapper .main .left #box-special .special-products .info-products a:hover {
+#box-special .special-products .info-products a:hover {
     color: #00f;
 }
 
 
-#wrapper .main .left #box-special .special-products .info-products span {
+#box-special .special-products .info-products span {
     font-weight: bold;
 }
 
-
 /* right content-main */
 #wrapper .main .right {
-    height: 500px;
-    width: 800px;
+    width: 700px;
+    height: 386px;
     margin-left: 240px;
 }
 
 #wrapper .main .right .slide {
     width: 700px;
     height: 386px;
+    overflow: hidden;
 }
 
 #wrapper .main .right .col1 {
@@ -358,24 +353,24 @@ input sẽ định dạng luôn cho phần tick Remember Me */
     width: 220px;
 }
 
-#wrapper .main .right .col2 #box-category .content .title {
+#wrapper .main .right .col2 #box-category .title {
     height: 40px;
     line-height: 40px;
     font-size: 18px;
 }
 
-#wrapper .main .right .col2 #box-category .content ul li {
+#wrapper .main .right .col2 #box-category ul li {
     font-size: 12px;
     margin: 0 10px;
     padding: 4px;
     border-bottom: 1px solid #d2d2d2;
 }
 
-#wrapper .main .right .col2 #box-category .content ul li a {
+#wrapper .main .right .col2 #box-category ul li a {
     color: black;
 }
 
-#wrapper .main .right .col2 #box-category .content ul li a:hover {
+#wrapper .main .right .col2 #box-category ul li a:hover {
     color: #00c;
 }
 
